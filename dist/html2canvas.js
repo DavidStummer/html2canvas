@@ -7227,6 +7227,8 @@ var addOtherToken = function addOtherToken(tokens, identifier) {
         case 'close-quote':
             tokens.push({ type: TOKEN_TYPE.CLOSEQUOTE });
             break;
+        default:
+            tokens.push({ type: TOKEN_TYPE.STRING, value: identifier });
     }
 };
 
